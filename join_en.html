@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join the LuvCoin Community</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff, #fff6e6);
+      color: #333;
+    }
+    header, footer {
+      background: #fdf2f8;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a, footer nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffccf9, #d5f4ff, #fff1cc);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin: 10px 0 20px;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      min-width: 260px;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff66b2;
+      color: white;
+      border-radius: 25px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 10px auto;
+      max-width: 600px;
+      background: #fff0f6;
+      padding: 15px;
+      border-left: 5px solid #ff66b2;
+      border-radius: 10px;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      font-size: 0.9em;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    footer nav {
+      margin: 10px 0;
+    }
+  
+    .card:hover {
+      transform: translateY(-5px);
+      transition: 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .cta-buttons a:hover {
+      background: #ff3385;
+      transition: background 0.3s ease;
+    }
+    
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8em;
+  }
+  .hero p, .section p {
+    font-size: 1em;
+  }
+  .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-buttons a {
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  .hero p, .section p {
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 10px 0;
+  }
+  .grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cta-buttons a {
+    display: block;
+    margin: 8px auto;
+    width: 90%;
+    max-width: 300px;
+  }
+  blockquote {
+    font-size: 0.95em;
+    padding: 12px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+    
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+  
+
+  <section class="hero">
+    <h1>Join the Chain of Love</h1>
+    <p>Be part of a global movement powered by kindness, connection, and crypto.</p>
+    <div class="cta-buttons">
+      <a href="#">Join Our Discord</a>
+      <a href="#">Become a Love Ambassador</a>
+      <a href="#">Follow Us on Twitter</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our Growing Impact</h2>
+<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_jcikwtux.json" background="transparent" speed="1" style="width: 150px; height: 150px; margin: auto;" loop autoplay></lottie-player>
+    <div class="grid">
+      <div class="card"><strong>Community Members</strong><br/>82,000+ hearts united</div>
+      <div class="card"><strong>On-Chain Actions</strong><br/>12.3M+ transactions of love</div>
+      <div class="card"><strong>Charity Partners</strong><br/>150+ causes supported</div>
+      <div class="card"><strong>LUV Distributed</strong><br/>95M+ coins earned</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Voices from the Community</h2>
+    <blockquote>“LuvCoin isn’t just a token—it's a tool to brighten the world.”</blockquote>
+    <blockquote>“Came for the fun, stayed for the impact.”</blockquote>
+  </section>
+
+  <section class="section">
+    <h2>Ways to Get Involved</h2>
+    <p>1. Join us on social media<br/>2. Take part in our #SpreadLuv campaigns<br/>3. Unlock exclusive perks: Early NFT access, seasonal rewards, and community-only content</p>
+  </section>
+
+  
+<section class="section">
+  <h2>Meet Our Community</h2>
+  <div style="width:100%; max-width: 300px; margin: auto;">
+    <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png"
+         alt="Global Community Map" style="width:100%; height:auto; display: block;" />
+  </div>
+</section>
+
+<section class="section">
+    <h2>Earn Your Badge of Love</h2>
+
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_myejiggj.json"
+  background="transparent" speed="1" style="width: 200px; height: 200px; margin: auto;" loop autoplay>
+</lottie-player>
+
+    <div class="grid">
+      <div class="card"><strong>Love Ambassador</strong><br/>Host or co-host a Luv event</div>
+      <div class="card"><strong>Kindness Champion</strong><br/>Perform verifiable good deeds</div>
+      <div class="card"><strong>Creative Heart</strong><br/>Contribute art, memes, or NFTs</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Community Events You Can’t Miss!</h2>
+    <p>Challenges, charity voting, NFT drops with real-time countdowns</p>
+    <div id="countdown" style="font-size: 1.5em; margin-top: 10px;"></div>
+    <script>
+      const targetDate = new Date();
+      targetDate.setHours(targetDate.getHours() + 48); // 48 hours from now
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = "Next Event Starts In: " + hours + "h " + minutes + "m " + seconds + "s ";
+        if (distance < 0) document.getElementById("countdown").innerHTML = "Event is live!";
+      }
+      setInterval(updateCountdown, 1000);
+    </script>
+  </section>
+
+  <section class="section">
+    <h2>Perks & Rewards</h2>
+    <p>Get exclusive content, bonus airdrops, and vote on LuvCoin’s future</p>
+  </section>
+
+  <section class="hero">
+    <h2>Are You Ready to Spread the LUV?</h2>
+    <div class="cta-buttons">
+      <a href="#">Join the Movement</a>
+      <a href="#">Earn Your First LUV</a>
+      <a href="#">Start Your Journey</a>
+    </div>
+  </section>
+
+  
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuvCoin NFT Collection</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff, #fff6e6);
+      color: #333;
+    }
+    header, footer {
+      background: #fdf2f8;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header nav a, footer nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffccf9, #d5f4ff, #fff1cc);
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+    .hero h1, .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #ff3399;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2em;
+      color: #ff3399;
+      margin-bottom: 15px;
+    }
+    .section p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 25px;
+      flex: 1 1 260px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+    }
+    .card h3 {
+      color: #ff66b2;
+      margin-bottom: 10px;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #ff66b2;
+      color: white;
+      border-radius: 30px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta-buttons a:hover {
+      background: #ff3399;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+    footer nav {
+      margin-bottom: 10px;
+    }
+  
+    .cta-buttons a {
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-buttons a::before {
+      content: '❤';
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: all 0.3s ease;
+      font-size: 1.2em;
+    }
+    .cta-buttons a:hover::before {
+      opacity: 1;
+      left: 20px;
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(255, 102, 178, 0.2);
+    }
+    .section h2 {
+      position: relative;
+    }
+    .section h2::after {
+      content: '✨';
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      margin-left: 8px;
+    }
+    .section h2:hover::after {
+      opacity: 1;
+    }
+
+</style>
+<script src="https://unpkg.com/lottie-web@5.9.4/build/player/lottie.min.js"></script>
+<meta content="LuvCoin NFT Collection - Explore art that spreads love and powers real-world change." name="description"/><meta content="en" http-equiv="Content-Language"/>
+    <style>
+    @media (max-width: 768px) {
+      .nft-section, .nft-card, .collection, .intro {
+        padding: 1rem !important;
+        margin: 1rem auto !important;
+        width: 92% !important;
+        box-sizing: border-box !important;
+      }
+      .nft-card img {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      .nft-card h3 {
+        font-size: 1.25rem !important;
+        text-align: center !important;
+      }
+      .nft-card p {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+      }
+    }
+    </style>
+    </head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+
+<section class="hero" style="padding: 40px 20px 30px">
+<div id="lottie-hero-1" style="width: 100px; height: 100px; margin: 0 auto;"></div>
+<script>
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-hero'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets6.lottiefiles.com/packages/lf20_qp1q7mct.json'
+      });
+    </script>
+<div style="margin-bottom: 30px;">
+<div style="margin-bottom: 30px;">
+<img alt="LuvCoin NFT Banner" src="luvcoin_nft_banner.png" style="width: 100%; max-width: 800px; border-radius: 20px; box-shadow: 0 10px 30px rgba(255, 51, 153, 0.2);"/>
+</div>
+</div>
+<style>
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-15px); }
+  100% { transform: translatey(0px); }
+}
+</style>
+<p>Own a piece of love. Be part of the movement to connect 10 billion hearts through art, emotion, and community.</p>
+<div class="cta-buttons">
+<a href="#">Explore the Collection</a>
+<a href="#">Mint Your NFT</a>
+</div>
+</section>
+<section class="section">
+<h2>Explore Our Signature Themes</h2>
+<div class="grid">
+<div class="card">
+<h3>LuvBot Variations</h3>
+<p>Superhero, Traveler, DJ, and other delightful avatars of love.</p>
+</div>
+<div class="card">
+<h3>10 Billion Hearts</h3>
+<p>One heart for every soul on Earth. Each one unique.</p>
+</div>
+<div class="card">
+<h3>Charitable NFTs</h3>
+<p>Proceeds fund education, mental health, and causes that matter.</p>
+</div>
+<div class="card">
+<h3>Meme-Inspired Art</h3>
+<p>Love meets laughs in our meme-powered collectibles.</p>
+</div>
+</div>
+</section>
+<section class="section">
+<h2>Claim the Rare &amp; Legendary</h2>
+<p>Gold and rainbow LuvBots. Animated glowing hearts. Ultra-limited. Forever cherished.</p>
+<div class="cta-buttons">
+<a href="#">Grab Yours Now</a>
+</div>
+</section>
+<section class="section">
+<h2>Interactive &amp; Evolving NFTs</h2>
+<p>Level up your collectibles through puzzles, love-to-earn actions, and token rewards.</p>
+</section>
+<section class="section">
+<h2>Every NFT Supports Real-World Change</h2>
+<p>Track your impact. See causes grow. Your NFT does more than sit in a wallet—it fuels a movement.</p>
+</section>
+<section class="section">
+<h2>Built With You, For You</h2>
+<p>Submit your designs. Vote on collections. Shape the future of LuvCoin art.</p>
+<div class="cta-buttons">
+<a href="#">Submit Artwork</a>
+<a href="#">Vote Now</a>
+</div>
+</section>
+<section class="section">
+<h2>Our Vision Forward</h2>
+<p>New drops, artist collabs, staking features, and more—all on our roadmap of love.</p>
+</section>
+<section class="section">
+<h2>Start Your NFT Journey</h2>
+<p>Connect your wallet. Choose your NFT. Mint on Solana, Polygon, or BSC.</p>
+<div class="cta-buttons">
+<a href="#" id="connectButton">Connect Wallet</a>
+<a href="#" id="mintButton">Mint Now</a>
+</div>
+</section>
+<section class="section">
+<h2>What the Community Says</h2>
+<p>“Over 10,000 NFTs minted in our first week!” Be part of the love revolution.</p>
+</section>
+<section class="hero" style="padding: 40px 20px 30px; margin: 0; background: linear-gradient(to right, #ffe6f0, #f2f8ff, #fff1cc);"><div id="lottie-hero-2" style="width: 100px; height: 100px; margin: 10px auto;"></div><div id="lottie-cta" style="width: 100px; height: 100px; margin: 10px auto;"></div>
+<script>
+      lottie.loadAnimation({
+        container: document.getElementById('lottie-hero'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'https://assets6.lottiefiles.com/packages/lf20_qp1q7mct.json'
+      });
+    </script>
+<h2 style="margin: 0 auto 20px; font-size: 2em; font-weight: 600; color: #ff3399;">Join the Revolution of Love and Creativity</h2>
+<div class="cta-buttons" style="margin-top: 15px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+<a href="#">Explore Collection</a>
+<a href="#">Join Our Discord</a>
+</div>
+<script>
+lottie.loadAnimation({
+  container: document.getElementById('lottie-cta'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'https://assets6.lottiefiles.com/private_files/lf30_editor_yhkzy0uy.json'
+});
+</script><script>
+        lottie.loadAnimation({
+          container: document.getElementById('lottie-hero-2'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'https://assets6.lottiefiles.com/private_files/lf30_editor_yhkzy0uy.json'
+        });
+        </script></section>
+
+<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<script src="https://unpkg.com/@walletconnect/web3-provider@1.8.0/dist/umd/index.min.js"></script>
+<script src="https://unpkg.com/web3modal@1.9.5/dist/index.js"></script>
+<script>
+    let web3Modal, provider, web3;
+
+    window.addEventListener('load', async () => {
+      const providerOptions = {
+        walletconnect: {
+          package: window.WalletConnectProvider.default,
+          options: {
+            infuraId: "1c698d804b4b4f5092c1fc25f1f6740e"  // Public demo ID
+          }
+        }
+      };
+
+      web3Modal = new window.Web3Modal.default({
+        cacheProvider: false,
+        providerOptions,
+      });
+
+      document.getElementById("connectButton").addEventListener("click", async () => {
+        try {
+          provider = await web3Modal.connect();
+          web3 = new Web3(provider);
+          const accounts = await web3.eth.getAccounts();
+          alert("Wallet connected: " + accounts[0]);
+        } catch(e) {
+          console.error("Could not get a wallet connection", e);
+        }
+      });
+
+      document.getElementById("mintButton").addEventListener("click", async () => {
+        if (!web3) {
+          alert("Please connect your wallet first.");
+          return;
+        }
+        alert("Minting NFT... (placeholder logic)");
+        // Replace with real contract interaction here
+      });
+    });
+  </script>
+<canvas id="spark-canvas" style="position:fixed;top:0;left:0;pointer-events:none;z-index:10;"></canvas>
+<script>
+  const canvas = document.getElementById('spark-canvas');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let sparks = [];
+
+  function resizeCanvas() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  function createSpark() {
+    return {
+      x: Math.random() * width,
+      y: Math.random() * height,
+      size: Math.random() * 2 + 1,
+      speedY: Math.random() * 0.5 + 0.5,
+      opacity: Math.random() * 0.5 + 0.5
+    };
+  }
+
+  function drawSpark(spark) {
+    ctx.beginPath();
+    ctx.arc(spark.x, spark.y, spark.size, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255, 153, 255,' + spark.opacity + ')';
+    ctx.fill();
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+    sparks.forEach((spark, index) => {
+      spark.y -= spark.speedY;
+      spark.opacity -= 0.002;
+      if (spark.opacity <= 0) {
+        sparks[index] = createSpark();
+        sparks[index].y = height;
+      }
+      drawSpark(spark);
+    });
+    requestAnimationFrame(animate);
+  }
+
+  for (let i = 0; i < 80; i++) {
+    sparks.push(createSpark());
+  }
+
+  animate();
+</script>
+</body>
+</html>

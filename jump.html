@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=index_en.html">
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.startsWith('zh')) {
+      window.location.href = '/index_cn.html';
+    } else {
+      window.location.href = '/index_en.html';
+    }
+  </script>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to your preferred language version...</p>
+</body>
+</html>

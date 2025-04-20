@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LuvCoin 爱心慈善页面 | 区块链上的公益行动</title>
+  <meta name="description" content="LuvCoin 将 15% 的代币投入教育、心理健康、平等和爱心项目，用区块链之爱连接 82 亿人心。">
+  <meta name="keywords" content="LuvCoin, 区块链慈善, 公益代币, 教育捐赠, 心理健康, 加密公益, 爱心项目">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuvCoin | 慈善</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f8e6ff, #e6f0ff, #fceeff);
+      color: #222;
+    }
+    header, footer {
+      background: #fde2f3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 24px;
+      color: #ff3399;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #222;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ff3399;
+    }
+    section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      background: linear-gradient(to right, #ff66b2, #3399ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .button {
+      background: linear-gradient(145deg, #ff3399, #ff66b2);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 28px;
+      font-weight: 600;
+      text-decoration: none;
+      margin: 10px;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(255, 51, 153, 0.3);
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 18px rgba(255, 51, 153, 0.4);
+    }
+    .chart, .vote, .stories, .report, .involve {
+      background: white;
+      border-radius: 16px;
+      padding: 50px 30px;
+      margin: 40px auto;
+      max-width: 1000px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+    .footer-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 8px;
+    }
+    footer {
+      flex-direction: column;
+      background: #111;
+      color: white;
+      font-size: 14px;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer a {
+      color: #ff99cc;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      header, nav, .logo {
+        text-align: center;
+        justify-content: center;
+      }
+      nav a {
+        margin: 8px;
+        font-size: 14px;
+      }
+      section {
+        padding: 40px 20px;
+      }
+      h1, h2 {
+        font-size: 28px;
+      }
+      .button {
+        padding: 12px 24px;
+        font-size: 14px;
+      }
+    }
+
+    .hero-animation {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+    }
+  </style>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_cn.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_cn.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+
+<style>
+  .lang-switch {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  .lang-switch button {
+    background: #ffffffcc;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+  .lang-switch button:hover {
+    background: #f0f0f0;
+  }
+</style>
+
+
+
+
+
+<section>
+  <div class="hero-animation">
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_iwmd6pyr.json" background="transparent" speed="1" loop autoplay></lottie-player>
+  </div>
+  <h1>LuvCoin 的慈善影响力</h1>
+  <p>15% 的代币将用于让世界变得更美好。</p>
+  <a href="#" class="button">立即捐赠</a>
+  <a href="#" class="button">查看影响报告</a>
+</section>
+
+<section class="chart">
+  <h2>慈善资金分配图</h2><canvas id="allocationChart" width="400" height="400" style="max-width: 600px; margin: 0 auto;"></canvas>
+</section>
+
+<section class="vote">
+  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_kkflmtur.json" background="transparent" speed="1" style="height: 200px;" loop autoplay></lottie-player>
+  <h2>你的声音很重要：投票选出下一个慈善方向</h2>
+  <p>选择 LUV 下一步应前往的地方——每一票都很重要。</p>
+  <a href="#" class="button">用 LUV 立即投票</a>
+</section>
+
+<section class="stories">
+  <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_0yfsb3a1.json" background="transparent" speed="1" style="height: 200px;" loop autoplay></lottie-player>
+  <h2>你的 LUV 如何改变他人生活</h2>
+  <p>真实故事，真实人物，真实影响——源自你的慷慨。</p>
+</section>
+
+<section class="report">
+  <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_ktwnwv5m.json" background="transparent" speed="1" style="height: 200px;" loop autoplay></lottie-player>
+  <h2>通过透明建立信任</h2>
+  <p>2025 年已捐赠 $500,000，资助了 50,000 名儿童接受教育。</p>
+  <a href="#" class="button">查看完整报告</a>
+</section>
+
+<section class="involve">
+  <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_puciaact.json" background="transparent" speed="1" style="height: 200px;" loop autoplay></lottie-player>
+  <h2>加入这场爱的行动</h2>
+  <a href="#" class="button">Donate Tokens</a>
+  <a href="#" class="button">提议慈善项目</a>
+  <a href="#" class="button">加入我们的社区</a>
+</section>
+
+
+
+</body>
+</html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const ctx = document.getElementById('allocationChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: ['教育（10%）', '心理健康（20%）', '平等（30%）', '爱心项目（40%）'],
+        datasets: [{
+          label: '慈善 Allocation',
+          data: [10, 20, 30, 40],
+          backgroundColor: ['#FFB6C1', '#87CEFA', '#9370DB', '#FF69B4'],
+          borderColor: '#ffffff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        cutout: '60%',
+        plugins: {
+          legend: {
+            position: 'bottom',
+            labels: {
+              color: '#333',
+              font: { size: 14 }
+            }
+          }
+        }
+      }
+    });
+  });
+</script>
+

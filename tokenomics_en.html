@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuvCoin Tokenomics</title>
+<style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff, #fff6e6);
+      color: #333;
+    }
+    header, footer {
+      background: #fdf2f8;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header nav a, footer nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffccf9, #d5f4ff, #fff1cc);
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin: 10px 0 20px;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #e60073;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1 1 250px;
+      text-align: center;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      font-size: 0.9em;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    footer nav {
+      margin: 10px 0;
+    }
+    .cta-buttons {
+      margin-top: 20px;
+    }
+    .cta-buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff66b2;
+      color: white;
+      border-radius: 25px;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .card:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease-in-out;
+      box-shadow: 0 6px 20px rgba(255, 102, 178, 0.3);
+    }
+    .hero h1, .hero h2 {
+      background: linear-gradient(to right, #ff3399, #66ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .grid .card strong {
+      font-size: 1.1em;
+      color: #ff3399;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+    .section p, .section ul li {
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+    ul {
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 20px;
+    }
+    ul li::marker {
+      color: #ff66b2;
+    }
+    .cta-buttons a:hover {
+      background: #ff3399;
+      transform: scale(1.05);
+    }
+
+
+    .centered-block {
+        max-width: 800px;
+        margin: 0 auto 20px;
+    }
+</style>
+<script src="assets/floating-hearts.js"></script>
+<link href="assets/luvbot-icon.png" rel="icon" type="image/png"/>
+<script src="https://unpkg.com/lottie-web@5.7.4/build/player/lottie.min.js"></script><style>
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .card {
+    flex: 1 1 100%;
+  }
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
+    <style>
+    @media (max-width: 768px) {
+      .tokenomics-section, .info-block, .chart, .text-section, .token-card {
+        padding: 1rem !important;
+        margin: 1rem auto !important;
+        width: 92% !important;
+        box-sizing: border-box !important;
+      }
+      .token-card img, .chart img {
+        max-width: 100% !important;
+        height: auto !important;
+      }
+      .token-card h3, .text-section h2 {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+      }
+      .token-card p, .text-section p {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        text-align: center !important;
+      }
+    }
+    </style>
+    </head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+
+<section class="hero">
+<h1>LuvCoin Tokenomics: Connecting 10 Billion Hearts</h1>
+<p>Every LUV token represents love in action, empowering communities worldwide.</p>
+<div class="cta-buttons">
+<a href="#">Learn More</a>
+<a href="#">Join Us</a>
+</div>
+</section>
+<section class="section">
+<h2>Total Supply</h2>
+<div class="centered-block"><p class="highlight">10,000,000,000 LUV tokens</p></div>
+<div class="centered-block"><p>Tied to the global population on January 21, 2025.</p></div>
+</section>
+<section class="section"><h2>Allocation: Spreading Love Thoughtfully</h2>
+<div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+<img alt="Token Allocation Pie Chart" src="assets/token-allocation-pie-chart.png" style="max-width: 60%; height: auto; margin: 20px auto; display: block;"/>
+</div>
+<div style="max-width:300px; margin: 30px auto;"><lottie-player autoplay="True" background="transparent" loop="True" speed="1" src="https://assets4.lottiefiles.com/packages/lf20_v7e5m0tz.json"></lottie-player></div></section>
+<section class="section">
+<h2>What Makes LuvCoin Unique?</h2>
+<div class="grid">
+<div class="card"><strong>Transaction Fee:</strong><br/>2% per transaction (1% to Charity, 1% to Holders)</div>
+<div class="card"><strong>Burn Mechanism:</strong><br/>0.1% burned every transaction</div>
+<div class="card"><strong>DAO Governance:</strong><br/>Token-based community voting</div>
+</div>
+</section>
+<section class="section">
+<h2>Empowering the Community (40%)</h2>
+<div class="centered-block"><ul>
+<li>Airdrops to loyal users</li>
+<li>Staking rewards and NFT bonuses</li>
+<li>Referral rewards for sharing</li>
+</ul></div>
+</section>
+<section class="section">
+<h2>Charity Fund (15%)</h2>
+<div class="centered-block"><p>Supports education, mental health, and equality initiatives globally. Voted transparently by LUV holders.</p></div>
+</section>
+<section class="section">
+<h2>Marketing &amp; Growth (20%)</h2>
+<div class="centered-block"><p>Campaigns, influencer collabs, artist NFTs, and live events to grow LuvCoin worldwide.</p></div>
+</section>
+<section class="section">
+<h2>Stability and Preparedness</h2>
+<div class="centered-block"><ul>
+<li><strong>Liquidity Pool:</strong> Enables trading on DEXs</li>
+<li><strong>Reserve Fund:</strong> Used for emergencies, upgrades, and partnerships</li>
+</ul></div>
+</section>
+<section class="section">
+<h2>Community-Driven Decisions</h2>
+<div class="centered-block"><p>One LUV = one vote. Participate in the ecosystem direction and charitable support.</p></div>
+</section>
+<section class="section">
+<h2>How You Can Use LUV</h2>
+<div class="centered-block"><ul>
+<li>Tip, donate, or transact in partner apps</li>
+<li>Mint and trade NFTs in marketplace</li>
+<li>Earn by playing games and joining missions</li>
+</ul></div>
+</section>
+<section class="hero">
+<h2>Join the Movement</h2>
+<p>Every LUV token connects a heart to a global mission. Be part of the story!</p>
+<div class="cta-buttons">
+<a href="#">Buy LUV Now</a>
+<a href="#">Learn How It Works</a>
+</div>
+</section>
+
+</body>
+</html>

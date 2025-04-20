@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>LuvCoin Mission</title>
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #fbd3e9, #bbdff9, #f6e6b4);
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff5;
+    padding: 1em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+nav a {
+    text-decoration: none;
+    color: #222;
+}
+.hero {
+    text-align: center;
+    padding: 2em;
+}
+.luvbot {
+    width: 150px;
+    margin-top: 1em;
+    animation: float 3s ease-in-out infinite;
+}
+.buttons button {
+    margin: 1em;
+    padding: 0.7em 1.5em;
+    border: none;
+    border-radius: 8px;
+    background: #ff82b2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.buttons button:hover {
+    transform: scale(1.05);
+}
+section {
+    padding: 2em;
+    text-align: center;
+}
+.pillar-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 1em;
+}
+.pillar img {
+    width: 80px;
+    margin-bottom: 1em;
+    animation: fadeIn 2s ease;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+        align-items: center;
+    }
+    .pillar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-container, .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .buttons button {
+        width: 80%;
+    }
+}
+
+.logo span {
+    color: #ff3399;
+}
+.main-header {
+    background: linear-gradient(to right, #fbd3e9, #bbdff9);
+    padding: 1em;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.2em;
+    flex-wrap: wrap;
+}
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+}
+.social-icons {
+    display: flex;
+    gap: 0.8em;
+    align-items: center;
+}
+.social-icons img {
+    width: 20px;
+}
+.main-footer {
+    background: #111;
+    text-align: center;
+    color: white;
+    padding: 2em 1em;
+}
+.footer-links {
+    margin-bottom: 1em;
+}
+.footer-links a {
+    margin: 0 1em;
+    color: white;
+    text-decoration: none;
+}
+.pillars-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 2em;
+}
+.pillar {
+    max-width: 250px;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+}
+
+section {
+    padding: 4em 2em;
+    text-align: center;
+}
+
+.pillar {
+    text-align: center;
+    padding: 1em;
+}
+.pillar img {
+    margin-bottom: 1em;
+    height: 60px;
+}
+
+.pillars-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 3em;
+}
+
+section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1.2em;
+    color: #222;
+}
+
+</style>
+
+    <style>
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem !important;
+      }
+      .section, .content, .feature-block, .impact-card {
+        padding: 1rem !important;
+        margin: 1rem auto !important;
+        width: 90% !important;
+        box-sizing: border-box !important;
+      }
+      h1, h2, h3 {
+        font-size: 1.5rem !important;
+        text-align: center !important;
+      }
+      p, li {
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+      }
+    }
+    </style>
+    </head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+    
+
+
+
+
+    <section class="hero">
+        <h2>Empowering Communities with Every Transaction</h2>
+        <p>Love on the chain, connecting 10 billion hearts and empowering communities worldwide.</p>
+        <div class="buttons">
+            <button>Join the Movement</button>
+            <button>Learn More</button>
+        </div>
+        <img src="luvbot.png" alt="Luvbot" class="luvbot"/>
+    </section>
+    <section class="mission">
+        <h2>At the Heart of LuvCoin</h2>
+        <p>LuvCoin fosters a world driven by love, passion, and connection — one transaction at a time.</p>
+    </section>
+    
+<section class="pillars">
+     <h2 class="section-title">What We Stand For</h2>
+<div class="pillars-wrapper">
+
+        <div class="pillar-container">
+            <div class="pillar">
+                <img src="inclusivity.png" alt="Inclusivity Icon" />
+                <h3>Promote Inclusivity</h3>
+                <p>Build a global, diverse community.</p>
+            </div>
+            <div class="pillar">
+                <img src="charity.png" alt="Charity Icon" />
+                <h3>Empower Charitable Causes</h3>
+                <p>Support meaningful global initiatives.</p>
+            </div>
+            <div class="pillar">
+                <img src="creativity.png" alt="Creativity Icon" />
+                <h3>Drive Fun and Creativity</h3>
+                <p>Engage users with memes, NFTs, and interactive campaigns.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="how">
+        <h2>How LuvCoin Spreads Love and Connection</h2>
+        <p>Harnessing blockchain to unite the world. Using crypto as a force for good. Making crypto fun and accessible for everyone.</p>
+    </section>
+    <section class="impact">
+        <h2>A Movement Powered by You</h2>
+        <p>Charities supported globally. Hearts connected through LuvCoin transactions. Creative campaigns and NFT collaborations launched.</p>
+    </section>
+    <section class="cta">
+        <h2>Join the Mission, Share the Love</h2>
+        <p>Be a part of the LuvCoin movement and help build a more compassionate world.</p>
+        <button>Start Your Journey</button>
+        <button>Learn How LuvCoin Works</button>
+    </section>
+    
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+function copyAddress() { alert('Solana address copied!'); }

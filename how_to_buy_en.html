@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #ffe0f0, #e0f0ff, #e5d6ff);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        .btn {
+            background: #ff89c0;
+            border: none;
+            padding: 15px 30px;
+            color: white;
+            font-weight: bold;
+            border-radius: 40px;
+            box-shadow: 0 5px 20px rgba(255,137,192,0.3);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(255,137,192,0.4);
+        }
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            .btn { padding: 12px 24px; font-size: 0.95em; }
+        }
+    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How to Buy LuvCoin</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff, #fff6e6);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header, footer {
+      background: #fdf2f8;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header nav a, footer nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffccf9, #d5f4ff, #fff1cc);
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(255, 102, 178, 0.3);
+      padding: 25px;
+      flex: 1 1 260px;
+      min-width: 260px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 0 15px rgba(255, 102, 178, 0.6);
+    }
+    .cta-buttons a {
+      display: inline-block;
+      padding: 12px 24px;
+      background: linear-gradient(to right, #ff66b2, #ff3399);
+      color: white;
+      border-radius: 30px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+    .cta-buttons a:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      font-size: 0.9em;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    @media (max-width: 768px) {
+      header, footer {
+        flex-direction: column;
+        text-align: center;
+      }
+      .grid {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .card img {
+      height: 48px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+
+
+<style>
+@keyframes fadeInGlow {
+  0% { opacity: 0; filter: brightness(0.6); transform: scale(0.95); }
+  50% { opacity: 1; filter: brightness(1.2); transform: scale(1); }
+  100% { opacity: 0.7; filter: brightness(0.8); transform: scale(1.02); }
+}
+
+.lottie-fade-glow {
+  animation: fadeInGlow 6s ease-in-out infinite alternate;
+}
+</style>
+
+<div style="position: relative; width: 100%; height: 100%; z-index: -1;">
+  <!-- Sparkles Top Left -->
+  <div style="position: absolute; top: 10%; left: 5%;">
+    <lottie-player class="lottie-fade-glow"
+                   src="https://assets10.lottiefiles.com/packages/lf20_tll0j4bb.json"
+                   background="transparent" speed="0.8" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+  </div>
+
+  <!-- Hearts Bottom Right -->
+  <div style="position: absolute; bottom: 5%; right: 5%;">
+    <lottie-player class="lottie-fade-glow"
+                   src="https://assets2.lottiefiles.com/packages/lf20_fcfjwiyb.json"
+                   background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>
+  </div>
+</div>
+
+
+
+
+<section class="hero animate__animated animate__fadeInDown">
+  <img src="assets/luvbot-banner.png" alt="LuvBot Mascot" style="width: 120px; margin-bottom: 20px;" />
+  <h1>How to Buy LuvCoin (LUV)</h1>
+  <p>Choose your preferred method and join the LuvCoin revolution!</p>
+</section>
+
+<section class="section">
+  <div class="grid">
+    <div class="card animate__animated animate__zoomIn">
+      <img src="https://cryptologos.cc/logos/solana-sol-logo.svg" alt="Solana" />
+      <h3>Buy with Solana</h3>
+      <p>Use your Solana wallet to purchase LUV tokens directly from our DApp.</p>
+      <code id="solana-address">[LUV_SOL_CONTRACT_ADDRESS]</code><br/>
+      <button class="cta-buttons" onclick="copyAddress()">Copy Address</button>
+    </div>
+    <div class="card animate__animated animate__zoomIn animate__delay-1s">
+      <img src="https://img.icons8.com/color/48/bank-cards.png" alt="Debit Card" />
+      <h3>Purchase with Debit Card</h3>
+      <p>Buy LuvCoin instantly with your debit card.</p>
+      <a href="#" class="cta-buttons">Buy Now</a>
+    </div>
+    <div class="card animate__animated animate__zoomIn animate__delay-2s">
+      <img src="https://cryptologos.cc/logos/binance-coin-bnb-logo.svg" alt="Binance" />
+      <h3>Trade on Binance</h3>
+      <p>Buy, sell, or trade LuvCoin on Binance.</p>
+    </div>
+    <div class="card animate__animated animate__zoomIn animate__delay-3s">
+      <img src="https://cryptologos.cc/logos/okb-okb-logo.svg" alt="OKEx" />
+      <h3>Trade on OKEx</h3>
+      <p>Trade LuvCoin securely on OKEx.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <p><strong>Ready to spread love?</strong></p>
+  <div class="cta-buttons">
+    <a href="#">Buy with Solana</a>
+    <a href="#">Buy with Debit Card</a>
+    <a href="#">Trade on Binance</a>
+    <a href="#">Trade on OKEx</a>
+  </div>
+</section>
+
+
+
+<script>
+  function copyAddress() {
+    const address = document.getElementById("solana-address").innerText;
+    navigator.clipboard.writeText(address).then(() => {
+      alert("Contract address copied to clipboard!");
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="联系我们 LuvCoin，我们欢迎您的反馈、合作与问题咨询。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>联系我们｜LuvCoin</title>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #e0f7ff, #fff6e6);
+      color: #333;
+      overflow-x: hidden;
+    }
+    header, footer {
+      background: #fdf2f8;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    header nav a, footer nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+      background: linear-gradient(to right, #ffccf9, #d5f4ff, #fff1cc);
+      padding: 60px 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2em;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .cta-buttons a, button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ff66b2;
+      color: white;
+      border-radius: 25px;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .cta-buttons a:hover, button:hover {
+      background: #ff3399;
+      transform: scale(1.05);
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #ff66b2;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      font-size: 0.9em;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    footer nav {
+      margin: 10px 0;
+    }
+    .floating-hearts {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+  
+@media (max-width: 768px) {
+  header, footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2em;
+  }
+  .hero p, .section p {
+    font-size: 1em;
+  }
+  .cta-buttons a, button {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+</style>
+</head>
+<body>
+<div id="header-placeholder"></div>
+<script>
+  fetch('luvcoin_header_cn.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('luvcoin_footer_cn.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
+  
+
+  <section class="hero" data-aos="fade-up">
+    <canvas class="floating-hearts" id="heartCanvas"></canvas>
+    <h1>让我们联系起来</h1>
+    <p>有任何问题、反馈或合作建议？我们欢迎您的来信！</p>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>联系方式</h2>
+    <p><strong>一般咨询：</strong> hello@luvverse.io</p>
+    <p><strong>商务合作：</strong> team@luvverse.io</p>
+    <div class="cta-buttons">
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+      <a href="#">Telegram</a>
+      <a href="#">Discord</a>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>发送留言</h2>
+    <img src="lovebot_icon.png" alt="LuvBot Icon" style="width: 100px; margin: 20px auto; display: block;" />
+<form>
+      <input type="text" name="name" placeholder="您的姓名" required />
+      <input type="email" name="email" placeholder="您的邮箱" required />
+      <input type="text" name="subject" placeholder="主题" />
+      <textarea name="message" rows="5" placeholder="留言内容" required></textarea>
+      <button type="submit">发送您的心意！</button>
+    </form>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>常见问题</h2>
+    <p><strong>如何购买 LuvCoin？</strong><br/> 请访问“购买指南”页面查看详细步骤。</p>
+    <p><strong>在哪里可以了解 LuvCoin 的 NFT？</strong><br/> 请查看我们的 NFT 收藏页面。</p>
+    <p><strong>如何参与社区活动？</strong><br/> 请查看“社区”页面了解即将举行的活动。</p>
+    <a href="#" class="cta-buttons">查看常见问题</a>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2>需要帮助？</h2>
+    <p>LuvBot 已上线！点击右下角图标即可开始聊天。</p>
+  </section>
+
+  <section class="hero" data-aos="zoom-in">
+    <h2>加入 LUV 行动</h2>
+    <p>加入我们的 Discord 或关注 Twitter，一起传递爱。</p>
+    <div class="cta-buttons">
+      <a href="#">加入 Discord</a>
+      <a href="#">关注 Twitter</a>
+    </div>
+  </section>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const canvas = document.getElementById('heartCanvas');
+    const ctx = canvas.getContext('2d');
+    let hearts = [];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = document.querySelector('.hero').offsetHeight;
+    }
+
+    function createHeart() {
+      return {
+        x: Math.random() * canvas.width,
+        y: canvas.height + 20,
+        size: Math.random() * 8 + 4,
+        speed: Math.random() * 1 + 0.5,
+        opacity: Math.random() * 0.5 + 0.3
+      };
+    }
+
+    function drawHeart(heart) {
+      ctx.beginPath();
+      ctx.globalAlpha = heart.opacity;
+      ctx.fillStyle = '#ff66b2';
+      ctx.moveTo(heart.x, heart.y);
+      ctx.arc(heart.x - heart.size / 2, heart.y - heart.size / 2, heart.size / 2, 0, Math.PI * 2);
+      ctx.arc(heart.x + heart.size / 2, heart.y - heart.size / 2, heart.size / 2, 0, Math.PI * 2);
+      ctx.lineTo(heart.x, heart.y + heart.size);
+      ctx.fill();
+      ctx.globalAlpha = 1.0;
+    }
+
+    function animateHearts() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      hearts.forEach((heart, index) => {
+        heart.y -= heart.speed;
+        drawHeart(heart);
+        if (heart.y < -10) hearts[index] = createHeart();
+      });
+      requestAnimationFrame(animateHearts);
+    }
+
+    function initHearts() {
+      for (let i = 0; i < 30; i++) hearts.push(createHeart());
+      animateHearts();
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    initHearts();
+  </script>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_j1adxtyb.json" background="transparent"
+speed="1" style="width: 100px; height: 100px; position: fixed; bottom: 20px; right: 20px; z-index: 9999;" loop autoplay></lottie-player>
+
+</body>
+</html>

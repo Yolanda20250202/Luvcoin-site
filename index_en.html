@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuvCoin</title>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: linear-gradient(to right, #a1c4fd, #fad0c4, #f6d365);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+  color: #222;
+}
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.navbar {
+  background: rgba(255,255,255,0.2);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links a {
+  margin: 0 10px;
+  color: #222;
+  text-decoration: none;
+}
+.social-icons img, .footer-socials img {
+  height: 20px;
+  margin: 0 5px;
+}
+.hero, .section, footer {
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta-buttons .btn {
+  margin: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #ff69b4;
+  color: white;
+}
+.btn.primary {
+  background: #ff1493;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.feature-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 240px;
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+.buy-options {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.buy-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 280px;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.hero-visual img {
+  width: 160px;
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.logo.branded {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff1493;
+}
+.logo.branded span {
+  color: #ff69b4;
+}
+
+</style>
+<script defer="" src="script.js"></script>
+</head>
+<body>
+
+<section class="hero" id="home">
+<div class="hero-visual">
+<img alt="Luvbot Mascot" src="assets/luvbot-mascot.png"/>
+</div>
+<h1>Love is the only currency that grows when shared</h1>
+<div class="cta-buttons">
+<a class="btn" href="#mission">Learn More</a>
+<a class="btn primary" href="#how-to-buy">Get LuvCoin</a>
+</div>
+</section>
+<section class="section" id="mission">
+<h2>What is LuvCoin?</h2>
+<p>LuvCoin’s mission is to spread love through blockchain technology and empower global communities.</p>
+<a class="btn" href="#story">Read the Story</a>
+</section>
+<section class="section" id="features">
+<h2>Why Choose LuvCoin?</h2>
+<div class="features">
+<div class="feature-box">❤️<h3>Love-Driven</h3><p>Spreading positivity and kindness.</p></div>
+<div class="feature-box">🌍<h3>Community Support</h3><p>A global network of LuvCoin believers.</p></div>
+<div class="feature-box">⚙️<h3>Tech-Forward</h3><p>Built on secure and scalable blockchain tech.</p></div>
+</div>
+</section>
+<section class="section" id="community">
+<h2>Join Our Community</h2>
+<blockquote>"LuvCoin changed the way I think about crypto — it's more than money, it's meaning!"</blockquote>
+<div class="stats">
+<div><strong>82,000+</strong><br/>Users</div>
+<div><strong>$1.2M</strong><br/>Donated</div>
+<div><strong>12.3M</strong><br/>Transactions</div>
+</div>
+<a class="btn" href="#">Join Discord</a>
+</section>
+<section class="section" id="how-to-buy">
+<h2>How to Buy</h2>
+<div class="buy-options">
+<div class="buy-box">
+<h3>Buy with Solana</h3>
+<p>Use your Solana wallet to purchase LUV tokens.</p>
+<code>[Solana Contract Address]</code>
+<button onclick="copyAddress()">Copy</button>
+</div>
+<div class="buy-box">
+<h3>Purchase with a debit card</h3>
+<p>Buy LuvCoin instantly with your debit card.</p>
+<button class="btn">Buy Now</button>
+</div>
+</div>
+<p class="buy-cta">Ready to spread love? Choose your favorite method and start buying now!</p>
+</section>
+
+</body>
+</html>
