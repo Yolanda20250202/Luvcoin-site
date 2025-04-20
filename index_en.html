@@ -126,6 +126,15 @@ footer a {
     });
 </script>
 
+<div id="header-placeholder"></div>
+<script>
+  fetch('/luvcoin_header_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
 
 <section class="hero" id="home">
 <div class="hero-visual">
@@ -177,6 +186,16 @@ footer a {
 </div>
 <p class="buy-cta">Ready to spread love? Choose your favorite method and start buying now!</p>
 </section>
+
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/luvcoin_footer_en.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
 
 
 <div id="footer-placeholder"></div>

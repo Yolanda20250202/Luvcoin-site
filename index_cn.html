@@ -152,6 +152,15 @@ h1, h2, h3 {
     });
 </script>
 
+<div id="header-placeholder"></div>
+<script>
+  fetch('/luvcoin_header_cn.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
+
 <section class="hero" id="home">
 <div class="hero-visual">
 <img alt="Luvbot Mascot" src="assets/luvbot-mascot.png"/>
@@ -202,6 +211,16 @@ h1, h2, h3 {
 </div>
 <p class="buy-cta">准备好传播爱了吗？选择你喜欢的方式，立即开始购买！</p>
 </section>
+
+<div id="footer-placeholder"></div>
+<script>
+  fetch('/luvcoin_footer_cn.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
+</script>
+
 
 <div id="footer-placeholder"></div>
 <script>
